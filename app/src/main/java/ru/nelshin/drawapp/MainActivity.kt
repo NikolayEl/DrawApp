@@ -31,7 +31,7 @@ class MainActivity : ComponentActivity() {
             DrawAppTheme {
                 Column {
                     DrawCanvas(pathData)
-                    BottomPanel{color ->
+                    BottomPanel { color ->
                         pathData.value = pathData.value.copy(
                             color = color
                         )
@@ -75,7 +75,7 @@ fun DrawCanvas(pathData: MutableState<PathData>) {
                 )
             }
         }) {
-        pathList.forEach{pathData ->
+        pathList.forEach { pathData ->
             drawPath(
                 pathData.path,
                 color = pathData.color,

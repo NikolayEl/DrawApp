@@ -67,7 +67,7 @@ fun DrawCanvas(pathData: MutableState<PathData>) {
 
     Canvas(modifier = Modifier
         .fillMaxWidth()
-        .fillMaxHeight(0.75F)
+        .fillMaxHeight(0.85F)
         .pointerInput(true) {
             detectDragGestures(
                 onDragStart = {
